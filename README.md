@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# 🇦🇺 Full-Stack To-do App: From Korea to Australia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is part of my developer journey from Korea to Australia 🇰🇷➡️🇦🇺  
+I'm building a full-stack To-do application using **React (with TypeScript)** and **Spring Boot**  
+as I prepare for a software engineering role in the Australian tech industry.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Project Goals
 
-## Expanding the ESLint configuration
+- Practice full-stack development using real-world tools
+- Document every step of my learning process
+- Share my journey publicly through Medium blog posts
+- Strengthen my portfolio for overseas job applications
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Tech Stack
+
+### 🔹 Frontend
+
+- React
+- TypeScript
+- Vite
+- ESLint, Prettier
+
+### 🔹 Backend (coming soon)
+
+- Java 17
+- Spring Boot
+- MySQL
+
+---
+
+## 🛠 Getting Started (Frontend)
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📸 Screenshots
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### ✅ Node.js 설치 화면
+
+![Node Install](./screenshots/node-install.png)
+
+### ✅ Vite 프로젝트 생성 과정
+
+![Vite Setup 1](./screenshots/vite-setup1.png)  
+![Vite Setup 2](./screenshots/vite-setup2.png)
+
+### ✅ 개발 서버 실행 화면
+
+![Localhost](./screenshots/localhost1.png)
+
+### ✅ 프로젝트 폴더 구조
+
+![Project Structure](./screenshots/project-structure.png)
+
+---
+
+## 📝 Blog Series on Medium
+
+- 📘 [Part 1: Setting up React + TypeScript with Vite](https://medium.com/@wjddntjr4655/from-korea-to-australia-my-journey-to-becoming-a-developer-part-1-1c05cf0490c7)
+  > More parts coming soon: UI Design, State Management, Backend Integration...
+
+---
+
+## 🙋 About Me
+
+- **Name:** Wooseok Jung (정우석)
+- **Location:** South Korea 🇰🇷
+- **Goal:** Become a full-stack developer in Australia 🇦🇺
+- **Blog:** [My Medium Blog](https://medium.com/@wjddntjr4655)
+- **GitHub:** [github.com/JeongWS-dev](https://github.com/JeongWS-dev)
+- **Email:** wjddntjr4655@naver.com
