@@ -1,0 +1,33 @@
+/* src/components/FilterButtons.css */
+
+.filter-container {
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.filter-btn {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  border: 1px solid #b69e86;
+  background-color: #fff6e9;
+  color: #4b3b2b;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.filter-btn:hover {
+  background-color: #f0e1cb;
+  border: 1px solid #8c6e52;
+}
+
+.filter-btn.active {
+  background-color: #d8b48c;
+  color: white;
+  font-weight: 600;
+}

@@ -1,21 +1,29 @@
 // src/components/ConfirmModal.tsx
 import React from "react";
+import { useTodoContext } from "../contexts/TodoContext";
 import "./ConfirmModal.css";
 
 interface Props {
   message: string;
-  onConfirm: () => void;
-  onCancel: () => void;
+  targetId: string;
+  closeModal: () => void;
 }
 
-const ConfirmModal: React.FC<Props> = ({ message, onConfirm, onCancel }) => {
+const ConfirmModal: React.FC<Props> = ({ message, targetId, closeModal }) => {
+  const { handleDelete } = useTodoContext();
+
+  const handleConfirm = () => {
+    handleDelete(targetId); // Context에서 삭제 실행
+    closeModal(); // 모달 닫기
+  };
+
   return (
     <div className="modal-overlay">
       <div className="modal-box">
         <p>{message}</p>
         <div className="modal-buttons">
-          <button onClick={onConfirm}>Yes</button>
-          <button onClick={onCancel}>No</button>
+          <button onClick={handleConfirm}>Yes</button>
+          <button onClick={closeModal}>No</button>
         </div>
       </div>
     </div>

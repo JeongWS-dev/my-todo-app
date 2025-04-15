@@ -1,17 +1,23 @@
-import React, { useState } from "react"; // React와 useState 훅을 불러옴
+import React, { useState } from "react";
+import { useTodoContext } from "../contexts/TodoContext";
 
-interface Props {
-  onAdd: (text: string) => void; // 부모 컴포넌트로부터 받아올 함수의 타입
-}
-
-const TodoInput: React.FC<Props> = ({ onAdd }) => {
+const TodoInput: React.FC = () => {
   const [text, setText] = useState("");
+  const { setTodos } = useTodoContext();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("📥 handleSubmit 실행됨, 입력값:", text);
     if (!text.trim()) return;
-    onAdd(text.trim());
+
+    const newTodo = {
+      id: Date.now().toString(),
+      text: text.trim(),
+      completed: false,
+      createdAt: new Date().toISOString(),
+    };
+
+    setTodos((prev) => [...prev, newTodo]);
     setText("");
   };
 

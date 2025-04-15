@@ -84,6 +84,7 @@ li {
 /* 완료 버튼 */
 .todo-content button {
   padding: 6px 12px;
+  margin-left: 20px;
   font-size: 14px;
   border: none;
   background-color: #a97458;
@@ -123,4 +124,24 @@ li {
 .completed {
   text-decoration: line-through;
   color: #b39b91;
+}
+
+.addModalBtn {
+  background-color: #d8b48c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.addModalBtn:hover {
+  background-color: #5c4033 !important;
+  transition: background-color 0.2s ease-in-out;
+  outline: none !important;
+  box-shadow: none !important;
 }
