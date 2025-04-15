@@ -5,13 +5,14 @@ interface Props {
 }
 
 const TodoInput: React.FC<Props> = ({ onAdd }) => {
-  const [text, setText] = useState(""); // 입력창에 입력된 텍스트 상태 관리
+  const [text, setText] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // 새로고침 방지
-    if (!text.trim()) return; // 공백 입력 방지
-    onAdd(text.trim()); // 부모 컴포넌트에 전달
-    setText(""); // 입력창 비우기
+    e.preventDefault();
+    console.log("📥 handleSubmit 실행됨, 입력값:", text);
+    if (!text.trim()) return;
+    onAdd(text.trim());
+    setText("");
   };
 
   return (
