@@ -20,12 +20,13 @@ as I prepare for a software engineering role in the Australian tech industry.
 This project is being documented step-by-step in a Medium series:  
 📝 [View my full blog series](https://medium.com/@wjddntjr4655)
 
-| Part                                                                                                                                   | Title                                         |
-| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| 📘 [Part 1](https://medium.com/@wjddntjr4655/from-korea-to-australia-my-journey-to-becoming-a-developer-part-1-1c05cf0490c7)           | Setting up React + TypeScript with Vite       |
-| ✨ [Part 2](https://medium.com/@wjddntjr4655/from-korea-to-australia-part-2-building-a-todo-ui-with-react-and-typescript-12e7b0893bab) | Coming soon: Building the UI (included below) |
-| 🔜 Part 3                                                                                                                              | Task completion, deletion, and Context API    |
-| 🔜 Part 4                                                                                                                              | Backend integration with Spring Boot          |
+| Part                                                                                                                                        | Title                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 📘 [Part 1](https://medium.com/@wjddntjr4655/from-korea-to-australia-my-journey-to-becoming-a-developer-part-1-1c05cf0490c7)                | Setting up React + TypeScript with Vite             |
+| ✨ [Part 2](https://medium.com/@wjddntjr4655/from-korea-to-australia-part-2-building-a-todo-ui-with-react-and-typescript-12e7b0893bab)      | Building a Clean Todo UI with React and TypeScript  |
+| 💾 [Part 3](https://medium.com/@wjddntjr4655/from-korea-to-australia-part-3-making-my-todos-persistent-and-debugging-react-18-ba4aa7df9c27) | Making My Todos Persistent (and Debugging React 18) |
+| 🔜 Part 4                                                                                                                                   | Task completion, deletion, and Context API          |
+| 🔜 Part 5                                                                                                                                   | Backend integration with Spring Boot                |
 
 ---
 
@@ -62,17 +63,29 @@ This project is being documented step-by-step in a Medium series:
 
 ### 🎨 Screenshots
 
-- **패키지 구조조**  
+- **패키지 구조도**  
   ![Project Structure](./screenshots/project-structure_2.png)
 
-| Before                                           | After                                          |
-| ------------------------------------------------ | ---------------------------------------------- |
-| ![Before UI](./assets/screenshots/UI-Before.png) | ![After UI](./assets/screenshots/UI-After.png) |
+| Before                                    | After                                   |
+| ----------------------------------------- | --------------------------------------- |
+| ![Before UI](./screenshots/UI-Before.png) | ![After UI](./screenshots/UI-After.png) |
 
-### 📖 Read the Blog
+---
 
-👉 _Coming soon on Medium:_  
-**Part 2 – Building a Clean Todo UI with React and TypeScript**
+## 💾 Part 3: Making My Todos Persistent (and Debugging React 18)
+
+> In Part 3, I implemented localStorage-based persistence so that todos survive page reloads.  
+> While doing so, I encountered an unexpected issue caused by React 18's Strict Mode—  
+> and solved it by refining my useEffect logic.
+
+### 🔍 Highlights
+
+- Save todos in the browser using `localStorage`
+- Load data automatically when the app starts
+- Prevent unwanted overwrites in React 18’s development mode
+- Improved reliability and user experience
+
+👉 [Read Part 3 on Medium](https://medium.com/@wjddntjr4655/from-korea-to-australia-part-3-making-my-todos-persistent-and-debugging-react-18-ba4aa7df9c27)
 
 ---
 
@@ -104,6 +117,6 @@ npm run dev
 Name - Wooseok Jung (정우석)
 Location - South Korea 🇰🇷
 Goal - Become a full-stack developer in Australia 🇦🇺
-Blog - [My Medium Blog](https://medium.com/@wjddntjr4655)
-GitHub - @JeongWS-dev
+Blog - [My Medium Blog](https://medium.com/@wjddntjr4655)  
+GitHub - [@JeongWS-dev](https://github.com/JeongWS-dev)
 Email - wjddntjr4655@naver.com
