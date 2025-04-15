@@ -35,7 +35,7 @@ const TodoList: React.FC<Props> = ({ onDelete }) => {
             {/* 텍스트 + 완료 버튼 */}
             <div className="todo-content">
               <span className={todo.completed ? "completed" : ""}>
-                {todo.text} {todo.completed ? "(Done)" : ""}
+                {todo.title} {todo.completed ? "(Done)" : ""}
               </span>
               <button type="button" onClick={() => handleComplete(todo.id)}>
                 {todo.completed ? "Cancel" : "Complete"}

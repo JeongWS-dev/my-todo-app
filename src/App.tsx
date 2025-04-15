@@ -5,7 +5,7 @@ import TodoList from "./components/TodoList";
 import ConfirmModal from "./components/ConfirmModal";
 import { TodoProvider } from "./contexts/TodoContext";
 import FilterButtons from "./components/FilterButtons";
-import AddTodoModal from "./components/addTodoModal";
+import AddTodoModal from "./components/AddTodoModal";
 import "./App.css";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <TodoProvider>
-      <div style={{ padding: "0 12px" }}>
+      <div className = "todo-wrapper">
         {/* 제목은 한 줄 위 */}
         <h1 style={{ marginBottom: "35px" }}>To-do List</h1>
 
