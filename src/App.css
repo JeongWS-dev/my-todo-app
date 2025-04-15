@@ -42,7 +42,7 @@ input[type="text"] {
   color: #5c4033;
 }
 
-button {
+button#AddBtn {
   padding: 12px 20px;
   font-size: 16px;
   border: none;
@@ -53,7 +53,7 @@ button {
   transition: background-color 0.2s ease-in-out;
 }
 
-button:hover {
+button#AddBtn:hover {
   background-color: #8a5f45; /* 버튼 hover 시 더 진한 브라운 */
 }
 
@@ -63,8 +63,64 @@ ul {
   margin: 0;
 }
 
+/* 리스트 항목 */
 li {
+  position: relative; /* 삭제 버튼 위치 기준 */
   padding: 12px;
   border-bottom: 1px solid #e0d7cc;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 텍스트 + 완료버튼 그룹 */
+.todo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 완료 버튼 */
+.todo-content button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #a97458;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.todo-content button:hover {
+  background-color: #8a5f45;
+}
+
+/* 삭제 버튼 (오른쪽 상단에 작게 띄우기) */
+.delete-x {
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  font-size: 16px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.2s ease-in-out;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.delete-x:hover {
+  opacity: 1;
+  color: #c0392b;
+}
+
+/* 완료된 항목 */
+.completed {
+  text-decoration: line-through;
+  color: #b39b91;
 }

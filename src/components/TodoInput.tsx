@@ -23,7 +23,9 @@ const TodoInput: React.FC<Props> = ({ onAdd }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button type="submit">Add</button>
+      <button id="AddBtn" type="submit">
+        Add
+      </button>
     </form>
   );
 };

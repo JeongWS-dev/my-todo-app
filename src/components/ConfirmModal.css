@@ -1,0 +1,48 @@
+/* 배경 어둡게 처리 (모달 뒤 배경) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* 모달 본체 */
+.modal-box {
+  background-color: #fffaf2; /* 연한 베이지 */
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #5c4033;
+}
+
+/* 버튼 영역 */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* 모달 내부 버튼 스타일 */
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #a97458; /* 브라운 */
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal-buttons button:hover {
+  background-color: #8a5f45; /* hover 시 진한 브라운 */
+}

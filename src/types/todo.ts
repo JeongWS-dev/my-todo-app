@@ -1,6 +1,6 @@
 // src/types/todo.ts
 export interface Todo {
-  id: number;
+  id: string;
   text: string;
   completed: boolean;
 }
