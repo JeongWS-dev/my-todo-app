@@ -5,4 +5,5 @@ export interface Todo {
   content: string;
   completed: boolean;
   createdAt: string;
+  date: string;
 }

@@ -4,12 +4,13 @@ import { useTodoContext } from "../contexts/TodoContext";
 import { Todo } from "../contexts/TodoContext";
 
 interface Props {
+  todos: Todo[];
   onDelete: (id: string) => void; // 삭제 요청은 App.tsx에서 처리
   onSelect: (todo: Todo) => void;
 }
 
-const TodoList: React.FC<Props> = ({ onDelete, onSelect }) => {
-  const { todos, handleComplete, filter } = useTodoContext();
+const TodoList: React.FC<Props> = ({ onDelete, onSelect, todos }) => {
+  const { handleComplete, filter } = useTodoContext();
 
   const filteredTodos = todos.filter((todo) => {
     if (filter === "completed") return todo.completed;

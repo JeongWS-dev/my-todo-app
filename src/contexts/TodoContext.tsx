@@ -14,6 +14,7 @@ export interface Todo {
   content: string;
   completed: boolean;
   createdAt: string;
+  date: string;
 }
 
 type Filter = "all" | "completed" | "active";
@@ -27,7 +28,9 @@ interface TodoContextType {
   setFilter: (filter: Filter) => void;
 }
 
-const TodoContext = createContext<TodoContextType | undefined>(undefined);
+export const TodoContext = createContext<TodoContextType | undefined>(
+  undefined
+);
 
 export const TodoProvider = ({ children }: { children: ReactNode }) => {
   const [todos, setTodos] = useState<Todo[]>([]);

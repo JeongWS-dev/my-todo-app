@@ -1,0 +1,121 @@
+/* ░░░░ 기본 설정 ░░░░ */
+
+.react-datepicker {
+  background-color: #f7f1e8;
+  border: 1px solid #d6b28c;
+  border-radius: 12px;
+  font-family: "SUIT", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+/* 팝업 화살표 제거 */
+.react-datepicker__triangle {
+  display: none;
+}
+
+/* ░░░░ 헤더 영역 ░░░░ */
+
+.react-datepicker__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: none;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.react-datepicker__current-month {
+  color: #4e3629;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 이전/다음 화살표 위치 조정 */
+.react-datepicker__navigation {
+  top: 1.25rem;
+}
+
+.react-datepicker__navigation--previous {
+  left: 1rem;
+}
+
+.react-datepicker__navigation--next {
+  right: 1rem;
+}
+
+/* ░░░░ 요일 ░░░░ */
+
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  padding: 0 0.25rem;
+}
+
+.react-datepicker__day-name {
+  width: 2.4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #7a5c47;
+  letter-spacing: 0.4px;
+}
+
+/* ░░░░ 날짜 ░░░░ */
+
+.react-datepicker__day {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #4e3629;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background 0.2s ease;
+  margin: 0.1rem;
+}
+
+/* 오늘 */
+.react-datepicker__day--today {
+  background-color: #ffeacc;
+  font-weight: bold;
+}
+
+/* 선택됨 */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #d6b28c !important;
+  color: white;
+}
+
+/* hover */
+.react-datepicker__day:hover {
+  background-color: #e8dbca;
+}
+
+/* 요일과 날짜 간격 줄이기 */
+.react-datepicker__week {
+  margin-bottom: 0.2rem;
+}
+
+/* ░░░░ 커스텀 클래스 ░░░░ */
+
+/* 다른 달의 날짜 */
+.dp-outside-month {
+  color: #bbafa3 !important;
+  opacity: 0.6 !important;
+}
+
+/* 주말 */
+.dp-weekend {
+  color: #d54848 !important;
+  font-weight: bold;
+}
+
+.dp-holiday {
+  color: #d54848 !important;
+  font-weight: bold;
+}

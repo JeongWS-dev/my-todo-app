@@ -84,3 +84,16 @@
     transform: scale(1);
   }
 }
+
+/* AddTodoModal.css 등에서 */
+.custom-datepicker-input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.custom-datepicker-input:hover {
+  cursor: pointer;
+}
