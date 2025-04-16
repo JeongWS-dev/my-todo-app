@@ -19,7 +19,7 @@ const AddTodoModal: React.FC<Props> = ({ onClose }) => {
   const [content, setContent] = useState("");
   const [visibleMonth, setVisibleMonth] = useState(new Date()); // 현재 보고 있는 달
   const [todoDate, setTodoDate] = useState<Date>(new Date());
-  const language = "en";
+  const language = "ko";
   const countryCode = getCountryCode(language);
   const hd = new Holidays(countryCode);
 

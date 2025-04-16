@@ -22,7 +22,7 @@ function AppContent() {
   const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null);
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
 
-  const language = "en"; // 나중에 다국어 연결 예정
+  const language = "ko"; // 나중에 다국어 연결 예정
   const hd = new Holidays(getCountryCode(language));
   const isHoliday = (date: Date) => {
     const result = hd.isHoliday(date);
