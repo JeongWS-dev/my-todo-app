@@ -1,6 +1,6 @@
 // src/components/AddTodoModal.tsx
 import React, { useState } from "react";
-import { useTodoContext } from "../contexts/TodoContext";
+import { useTodoContext } from "../../contexts/TodoContext";
 import "./AddTodoModal.css"; // 스타일 따로 관리
 
 interface Props {

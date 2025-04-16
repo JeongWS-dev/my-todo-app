@@ -1,12 +1,14 @@
 // src/components/TodoList.tsx
 import React from "react";
 import { useTodoContext } from "../contexts/TodoContext";
+import { Todo } from "../contexts/TodoContext";
 
 interface Props {
   onDelete: (id: string) => void; // 삭제 요청은 App.tsx에서 처리
+  onSelect: (todo: Todo) => void;
 }
 
-const TodoList: React.FC<Props> = ({ onDelete }) => {
+const TodoList: React.FC<Props> = ({ onDelete, onSelect }) => {
   const { todos, handleComplete, filter } = useTodoContext();
 
   const filteredTodos = todos.filter((todo) => {
@@ -34,7 +36,11 @@ const TodoList: React.FC<Props> = ({ onDelete }) => {
 
             {/* 텍스트 + 완료 버튼 */}
             <div className="todo-content">
-              <span className={todo.completed ? "completed" : ""}>
+              <span
+                className={todo.completed ? "completed" : ""}
+                onClick={() => onSelect(todo)}
+                style={{ cursor: "pointer" }}
+              >
                 {todo.title} {todo.completed ? "(Done)" : ""}
               </span>
               <button type="button" onClick={() => handleComplete(todo.id)}>

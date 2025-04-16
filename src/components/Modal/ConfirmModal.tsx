@@ -1,6 +1,6 @@
 // src/components/ConfirmModal.tsx
 import React from "react";
-import { useTodoContext } from "../contexts/TodoContext";
+import { useTodoContext } from "../../contexts/TodoContext";
 import "./ConfirmModal.css";
 
 interface Props {
